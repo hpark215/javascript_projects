@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Bulma</title>
+    <style>
+      header {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        style="height: 20rem; width: 40rem"
+        src="./lisa-keffer-i0kB5B9J8Ds-unsplash.jpg"
+        alt="picture of a ping pong table"
+      />
+      <h1>0 to 0</h1>
+      <p>use the buttons below to keep score</p>
+
+      <!-- up to selection -->
+      <label for="games">Up to: </label>
+      <select name="games" id="games">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+
+      <!-- buttons -->
+      <div class="button_options">
+        <button class="button_one">+1 player one</button>
+        <button class="button_two">+2 player two</button>
+        <button class="button_three">reset</button>
+      </div>
+    </header>
+  </body>
+</html>
