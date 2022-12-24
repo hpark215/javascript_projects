@@ -9,38 +9,47 @@
       header {
         display: flex;
         flex-direction: column;
-        padding: 0 10rem;
+        margin: auto;
+        width: 35%;
+        padding: 10px;
+      }
+
+      select {
+        width: 10rem;
       }
     </style>
   </head>
   <body>
     <header>
       <img
-        style="height: 20rem; width: 40rem"
+        style="height: 15rem; width: 30rem; padding-bottom: 1rem"
         src="./lisa-keffer-i0kB5B9J8Ds-unsplash.jpg"
         alt="picture of a ping pong table"
       />
+      <figcaption><b>Pingpong Scorekeeper</b></figcaption>
       <h1>0 to 0</h1>
       <p>use the buttons below to keep score</p>
 
       <!-- up to selection -->
-      <label for="games">Up to: </label>
-      <select name="games" id="games">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-      </select>
+      <div>
+        <label for="games"><b>Playing To: </b></label>
+        <select name="games" id="games">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </div>
 
       <!-- buttons -->
       <div class="button_options">
         <button class="button_one">+1 player one</button>
-        <button class="button_two">+2 player two</button>
+        <button class="button_two">+1 player two</button>
         <button class="button_three">reset</button>
       </div>
     </header>
